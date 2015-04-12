@@ -11,25 +11,25 @@ In order to use this tool you should be familiar with the [Node.js platform](htt
 
 
 1. Clone the repo
-```
-$ git clone https://github.com/pguimera/static-dev-kit.git
-```
+  ```
+  $ git clone https://github.com/pguimera/static-dev-kit.git
+  ```
 
 2. Install all the dependencies
-```
-$ npm install
-```
+  ```
+  $ npm install
+  ```
 
-3. Install gulp globally
-```
-$ npm install -g gulp
-```
+3. Install gulp globally (recommended but optional)
+  ```
+  $ npm install -g gulp
+  ```
 
 4. Run the development mode
-```
-$ gulp serve
-```
-This should open a new tab in your default browser, if it doesn't navigate to `http://localhost:3000`.
+  ```
+  $ gulp serve
+  ```
+  This should open a new tab in your default browser, if it doesn't navigate to `http://localhost:3000`.
 
 
 5. You are ready to develop! Edit the files you want inside the `/app` folder.
