@@ -114,16 +114,12 @@ gulp.task('css', function () {
 
 // Scan css for assets and optimize them
 gulp.task('html', function () {
-    var assets = useref.assets({searchPath: '{.tmp,app}'});
-
     return gulp.src(SRC.html)
-        .pipe(assets)
+        .pipe(useref({searchPath: '{.tmp, app}'}))
         .pipe(_if('*.js', uglify({
             preserveComments: 'some'
         })))
         .pipe(_if('*.css', csso()))
-        .pipe(assets.restore())
-        .pipe(useref())
         .pipe(_if('*.html', minifyHtml({
             conditionals: true
         })))
